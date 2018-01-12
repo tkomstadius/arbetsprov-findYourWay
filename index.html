@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Get to know a place</title>
+</head>
+
+<body>
+<div class="contentWrapper">
+  <div class="content">
+
+    <main role="main">
+      <div class="search" role="search">
+        <form class="search-form" action="london.html" method="post" name="search-place">
+          <input class="search-form__input" type="text" name="search" placeholder="Ange stad eller land" aria-label="Ange stad eller land att söka på"/>
+          <button class="search-form__button" type="submit" onclick="doSearch()" aria-label="sök"/></button>
+        </form>
+
+        <div class="search-result" aria-label="sökresultat" tabindex="-1">
+          <h1 class="search-result__heading">Information om <em class="search-result__heading--bold">Stockholm</em></h1>
+          <div class="search_result__info">
+            <article class="info-box info-box--important">
+              <h2 class="info-box__heading">Nordens största stad</h2>
+              <p>Stockholm är Sveriges huvudstad samt landets kulturella, politiska, mediala och ekonomiska centrum. Det är Sveriges såväl som Nordens folkrikaste tätort.</p>
+            </article>
+            <article class="info-box info-box__regular">
+              <h2 class="info-box__heading">Världsarv</h2>
+              <p>Tre av Unescos världsarv ligger i Stockholmsområdet; Drottningholms slott och Birka (båda i Ekerö kommun), samt Skogskyrkogården (Stockholms kommun).</p>
+            </article>
+            <article class="info-box info-box--flex-content">
+              <h2 class="info-box__heading">Gamla stan - Staden mellan broarna</h2>
+              <p class="info-box__text">Under flera hundra år utgjorde Gamla stan den egentliga staden. Statsdelen bildades 1926 och hade år 2006 cirka 3 000 invånare. På Gamla stans norra spets återfinna Stockholms slott</p>
+              <img class="info-box__image" src="assets/stockholm.jpg" alt="" aria-hidden="true">
+              <button class="info-box__button" aria-label="Läs mer om din sökning">Läs mer</button>
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <button id="about-button" class="footer__about-button" aria-expanded="false" onclick="toggle('about-button', 'about-info')">Om tjänsten</button>
+      <div id="about-info" class="about" style="display: none;">
+        <p class="about__paragraph">All information om städerna är hämtad från <a class="about__paragraph-link" href="https://www.wikipedia.org/">Wikipedia</a>. Duis aute inure dolor in reprehenderit in voluptate velit esse cillium dolore eu fugiat nulla pariatur. </p>
+        <p class="about__paragraph">Ezcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </footer>
+
+  </div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

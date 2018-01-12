@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Find your way</title>
+</head>
+
+<body>
+<div class="contentWrapper">
+  <div class="content">
+
+    <main role="main">
+      <div class="search" role="search">
+        <form class="search-form" action="/" method="post">
+          <input class="search-form__input" type="text" name="search" value="London" aria-label="Ange stad eller land att söka efter">
+          <button class="search-form__button" type="submit" aria-label="sök"></button>
+        </form>
+
+        <div class="search-result">
+          <h1 class="search-result__heading">Information om <em class="search-result__heading--bold">London</em></h1>
+          <div class="search_result__info">
+            <article class="info-box info-box--flex-content">
+              <h2 class="info-box__heading">Hamnstaden vid Themsen</h2>
+              <p class="info-box__text">London är huvudstaden i Storbritannien. Staden grundades under namnet Londinium som huvudstad i den romerska provinsen Britannia, för vilken den också utgjorde hamnstad vid floden Themsen.</p>
+              <img class="info-box__image" src="assets/london.jpg" alt="" aria-hidden="true">
+              <button class="info-box__button" aria-label="Läs mer om din sökning">Läs mer</button>
+            </article>
+            <article class="info-box">
+              <h2 class="info-box__heading">City of London</h2>
+              <p>City of London är Londons historiska centrum och är en egen stad inom Storlondon, med speciella rättigheter som Storlondons 32 kommuner (boroughs) inte åtnjuter.</p>
+            </article>
+            <article class="info-box info-box--important">
+              <h2 class="info-box__heading">Finansiellt centrum</h2>
+              <p>London är ett av världens största finansiella centra inom internationella affärer och internationell handel. Tillsammans med New York ses London som det viktigaste finanscentrat i världen.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    <main>
+
+    <footer class="footer" role="contentinfo">
+      <button class="footer__about-button" aria-expanded="false">Om tjänsten</button>
+      <div class="about" style="display: none;">
+        <p class="about__paragraph">All information om städerna är hämtad från <a class="about__paragraph-link" href="https://www.wikipedia.org/">Wikipedia</a>. Duis aute inure dolor in reprehenderit in voluptate velit esse cillium dolore eu fugiat nulla pariatur. </p>
+        <p class="about__paragraph">Ezcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </footer>
+
+  </div>
+</div>
+</body>
+
+</html>
