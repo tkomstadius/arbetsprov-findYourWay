@@ -10,4 +10,4 @@ You can search for **London**. Without javascript the pages submits to a static 
 ### Reflections
 I use BEM to get a modular and well structured style. The semantics also help me with afterthought as to what I am building. 
 
-Because of the scope of this project I am not using a library or framwork to change data in the DOM. If this was a large project I would not do it this way beacuse I would not want to tie my data to the DOM in this way. 
+Because of the scope of this project I am not using a library or framework to change data in the DOM. If this was a large project I would not do it this way beacuse I would not want to tie my data to the DOM in this way. 
